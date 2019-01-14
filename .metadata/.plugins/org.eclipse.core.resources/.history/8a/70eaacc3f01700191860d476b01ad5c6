@@ -1,0 +1,11 @@
+package com.cg.restservice.pojo;
+
+public class Address {
+
+	
+	private int flatNumber;
+	private String name;
+	private String street;
+	private String city;
+	private int pinCode;
+}

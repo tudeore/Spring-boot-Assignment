@@ -1,0 +1,5 @@
+package com.cg.restservice.service;
+
+class EmployeeserviceImpl implements EmployeeService {
+
+}
