@@ -1,4 +1,4 @@
-package com.cg.restservice.pojo;
+package com.cg.restservice.firstspringBootApp.pojo;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
@@ -13,23 +13,12 @@ public class Employee {
 	private double salary;
 	
 	@Embedded
-	private String address;
+	private Address address;
 
 	
 	public Employee() {
 		super();
 	}
-	
-	
-	public Employee(int empId, String empName, double salary, String address) {
-		super();
-		this.empId = empId;
-		this.empName = empName;
-		this.salary = salary;
-		this.address = address;
-	}
-
-
 
 	public int getEmpId() {
 		return empId;
@@ -55,11 +44,11 @@ public class Employee {
 		this.salary = salary;
 	}
 
-	public String getAddress() {
+	public Address getAddress() {
 		return address;
 	}
 
-	public void setAddress(String address) {
+	public void setAddress(Address address) {
 		this.address = address;
 	}
 

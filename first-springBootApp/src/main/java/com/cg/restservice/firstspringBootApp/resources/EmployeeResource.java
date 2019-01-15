@@ -1,4 +1,4 @@
-package com.cg.restservice.resources;
+package com.cg.restservice.firstspringBootApp.resources;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cg.restservice.pojo.Employee;
-import com.cg.restservice.service.EmployeeService;
+import com.cg.restservice.firstspringBootApp.pojo.Employee;
+import com.cg.restservice.firstspringBootApp.service.EmployeeService;
 
 @RestController
 @RequestMapping("/employees")

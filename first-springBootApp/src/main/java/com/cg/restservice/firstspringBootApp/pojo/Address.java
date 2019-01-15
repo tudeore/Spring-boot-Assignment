@@ -1,4 +1,4 @@
-package com.cg.restservice.pojo;
+package com.cg.restservice.firstspringBootApp.pojo;
 
 import javax.persistence.Embeddable;
 
@@ -12,16 +12,7 @@ public class Address {
 	private String city;
 	private int pinCode;
 	
-	
-	
-	public Address(int flatNumber, String name, String street, String city, int pinCode) {
-		super();
-		this.flatNumber = flatNumber;
-		this.name = name;
-		this.street = street;
-		this.city = city;
-		this.pinCode = pinCode;
-	}
+
 	public Address() {
 		super();
 	}
