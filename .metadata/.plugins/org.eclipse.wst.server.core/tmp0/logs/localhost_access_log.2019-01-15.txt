@@ -1,0 +1,14 @@
+127.0.0.1 - - [15/Jan/2019:19:14:04 +0530] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [15/Jan/2019:19:14:06 +0530] "GET /employee-demo/ HTTP/1.1" 200 57
+127.0.0.1 - - [15/Jan/2019:19:14:18 +0530] "GET /employee-demo/app/home HTTP/1.1" 200 753
+127.0.0.1 - - [15/Jan/2019:19:14:24 +0530] "GET /employee-demo/app/getAll HTTP/1.1" 200 923
+127.0.0.1 - - [15/Jan/2019:19:14:27 +0530] "GET /employee-demo/app/addNewSA HTTP/1.1" 200 778
+127.0.0.1 - - [15/Jan/2019:19:14:30 +0530] "GET /employee-demo/app/getAccountById HTTP/1.1" 200 290
+127.0.0.1 - - [15/Jan/2019:19:14:34 +0530] "GET /employee-demo/app/searchByName HTTP/1.1" 200 300
+127.0.0.1 - - [15/Jan/2019:19:14:36 +0530] "GET /employee-demo/app/CloseAccount HTTP/1.1" 200 494
+127.0.0.1 - - [15/Jan/2019:19:14:38 +0530] "GET /employee-demo/app/GetCurrentBalance HTTP/1.1" 200 352
+127.0.0.1 - - [15/Jan/2019:19:14:41 +0530] "GET /employee-demo/app/deposit HTTP/1.1" 200 430
+127.0.0.1 - - [15/Jan/2019:19:14:44 +0530] "GET /employee-demo/app/withdraw HTTP/1.1" 200 432
+127.0.0.1 - - [15/Jan/2019:19:14:46 +0530] "GET /employee-demo/app/fundTransfer HTTP/1.1" 200 546
+127.0.0.1 - - [15/Jan/2019:19:14:49 +0530] "GET /employee-demo/app/getAll HTTP/1.1" 200 923
+127.0.0.1 - - [15/Jan/2019:19:14:52 +0530] "GET /employee-demo/app/sortForm HTTP/1.1" 404 992

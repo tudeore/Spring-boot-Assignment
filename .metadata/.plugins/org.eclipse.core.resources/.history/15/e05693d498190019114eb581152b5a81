@@ -1,0 +1,5 @@
+package com.cg.mongodb.springbootmongodb.customer;
+
+public class Customer {
+
+}

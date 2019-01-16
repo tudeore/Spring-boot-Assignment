@@ -1,0 +1,37 @@
+package com.cg.restservice.firstspringBootApp;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.cg.restservice.firstspringBootApp.pojo.Address;
+import com.cg.restservice.firstspringBootApp.pojo.Employee;
+import com.cg.restservice.firstspringBootApp.repository.EmployeeRepository;
+
+@SpringBootApplication
+public class FirstSpringBootAppApplication {
+	
+	public static void main(String[] args) {
+		SpringApplication.run(FirstSpringBootAppApplication.class, args);
+	}
+	
+	
+	@Bean
+	public CommandLineRunner populateData(EmployeeRepository repository) {
+		
+		
+		return (args)->{
+			
+			repository.save("101","Tushar","20000",new Address("105","vrindavan","nakaneRoad","Dhule","424002"));
+			repository.save("102","Tushar","20000",new Address("105","vrindavan","nakaneRoad","Dhule","424002"));
+			repository.save("103","Tushar","20000",new Address("105","vrindavan","nakaneRoad","Dhule","424002"));
+			repository.save("104","Tushar","20000",new Address("105","vrindavan","nakaneRoad","Dhule","424002"));
+			repository.save("106","Tushar","20000",new Address("105","vrindavan","nakaneRoad","Dhule","424002"));
+			
+			
+		};
+	}
+
+}
+

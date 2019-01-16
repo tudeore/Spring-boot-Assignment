@@ -1,0 +1,36 @@
+package com.cg.restservice.firstspringBootApp;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.cg.restservice.firstspringBootApp.pojo.Address;
+import com.cg.restservice.firstspringBootApp.pojo.Employee;
+import com.cg.restservice.firstspringBootApp.repository.EmployeeRepository;
+
+@SpringBootApplication
+public class FirstSpringBootAppApplication {
+	
+	public static void main(String[] args) {
+		SpringApplication.run(FirstSpringBootAppApplication.class, args);
+	}
+	
+	
+	@Bean
+	public CommandLineRunner populateData(EmployeeRepository repository) {
+		
+		
+		return (args)->{
+			
+			repository.save(new Employee(101,"Tushar",20000,new Address(105,"vrindavan","nakaneRoad","Dhule",424002)));
+			repository.save(new Employee(102,"Anil",20000,new Address(105,"vrindavan","nakaneRoad","pune",424002)));
+			repository.save(new Employee(103,"mayur",20000,new Address(105,"vrindavan","nakaneRoad","jalgaon",424002)));
+			repository.save(new Employee(104,"tejas",20000,new Address(105,"vrindavan","nakaneRoad","malegaon",424002)));
+			repository.save(new Employee(105,"rohan",20000,new Address(105,"vrindavan","nakaneRoad","raygad",424002)));
+			
+		};
+	}
+
+}
+

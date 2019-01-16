@@ -1,0 +1,29 @@
+package com.cg.restservice.firstspringBootApp;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.cg.restservice.firstspringBootApp.pojo.Employee;
+
+@SpringBootApplication
+public class FirstSpringBootAppApplication {
+	
+	public static void main(String[] args) {
+		SpringApplication.run(FirstSpringBootAppApplication.class, args);
+	}
+	
+	
+	
+	public CommandLineRunner populateData(Employee Repository) {
+		
+		
+		return (args)->{
+			
+			repository.save(new Employee())
+			
+		}
+	}
+
+}
+
